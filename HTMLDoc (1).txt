@@ -1,0 +1,88 @@
+New HTML5 Elements
+The most interesting new HTML5 elements are: 
+
+New semantic elements like <header>, <footer>, <article>, and <section>.
+
+New attributes of form elements like number, date, time, calendar, and range.
+
+New graphic elements: <svg> and <canvas>.
+
+New multimedia elements: <audio> and <video>.
+
+
+Canvas:
+ The HTML <canvas> element is used to draw graphics on a web page.
+ We can draw Circles Lines and Display Text
+ Canvas draws 2D graphics, with help of JavaScript.
+ 
+SVG:
+SVG stands for Scalable Vector Graphics
+SVG is used to draw graphics for the Web Page
+The HTML <svg> element is a container for SVG graphics elements circle, rectangle, polygon, ellipse .
+
+
+Differences Between SVG and Canvas
+SVG is used to draw 2D graphics in XML.
+Canvas draws 2D graphics, on the fly (with a JavaScript).
+
+
+
+HTML5 <video> element specifies to display video in Web page
+The Control attribute specifies to play, pause and change volume of video
+
+
+HTML5 <audio> element specifies to play audio in Web page
+The Control attribute specifies to play, pause and change volume of audio
+
+By using <source src="horse.mp3" type="audio/mpeg"> 
+src to access path of file and type to specify whether it is mp3 mp4 ogg mpeg
+
+Before HTML5, audio & video files could only be played in a browser with a plug-in (like flash).
+
+
+HTML Attributes:
+class, src, style, href, alt, width and height
+========================================================================================================
+========================================================================================================
+
+
+CSS
+
+1. CSS stands for Cascading Style Sheets
+   CSS  describes the way of styling of the HTML Document and how to display the HTML elements
+
+2.	CSS Syntax :
+
+	p {
+		color: red;
+		text-align: center;
+	} 
+
+	Here p is a selector and {} part is declaration
+
+	color is property and red is value
+	
+3. Three Ways to Insert CSS
+
+	External style sheet : 
+	With an external style sheet, you can change the look of an entire website by changing just one file
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	
+	Internal style sheet:
+	An internal style sheet may be used if one single page has a unique style
+	
+		<style>
+		h1 {
+			color: maroon;
+			margin-left: 40px;
+		} 
+		</style>
+
+	Inline style: 
+	An inline style may be used to apply a unique style for a single element.
+	<h1 style="color:blue;margin-left:30px;">This is a heading</h1>
+	
+	
+	
+	
+	

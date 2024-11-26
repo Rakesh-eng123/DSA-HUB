@@ -1,0 +1,214 @@
+<html>
+<head>
+    <title>Data Structures and Algorithms</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h2 {
+            padding: 15px;
+            margin: 0;
+            font-size: 1.5em;
+            color: white;
+        }
+        .card .content {
+            padding: 20px;
+            display: none;
+        }
+        .start-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            text-align: center;
+            width: 100%;
+        }
+        .start-button:hover {
+            background-color: #555;
+        }
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .card ul li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .card ul li:last-child {
+            border-bottom: none;
+        }
+        .card ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .card ul li a:hover {
+            text-decoration: underline;
+        }
+        .array { background-color: #ff6f61; }
+        .string { background-color: #6b5b95; }
+        .matrix { background-color: #88b04b; }
+        .linked-list { background-color: #ffcc5c; }
+        .heap { background-color: #d65076; }
+        .graphs { background-color: #45b8ac; }
+        .queue { background-color: #e94b3c; }
+        .tree { background-color: #009b77; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Data Structures and Algorithms</h1>
+        </div>
+        <div class="grid">
+            <div class="card array">
+                <h2>Array</h2>
+                <div class="content">
+                </div>
+                <a href="array.html" class="start-button" onclick="toggleContent(this)">Start Coding Journey</a>
+            </div>
+            <div class="card string">
+                <h2>String</h2>
+                <div class="content">
+                    <ul>
+                        <li><a href="#">Problem 1: Reverse a string</a></li>
+                        <li><a href="#">Problem 2: Check for palindrome</a></li>
+                        <li><a href="#">Problem 3: Find the first non-repeating character</a></li>
+                        <li><a href="#">Problem 4: Longest common prefix</a></li>
+                        <li><a href="#">Problem 5: Anagram check</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="start-button" onclick="toggleContent(this)">Start Coding Journey</a>
+            </div>
+            <div class="card matrix">
+                <h2>Matrix</h2>
+                <div class="content">
+                    <ul>
+                        <li><a href="#">Problem 1: Rotate matrix by 90 degrees</a></li>
+                        <li><a href="#">Problem 2: Spiral order traversal</a></li>
+                        <li><a href="#">Problem 3: Search in a matrix</a></li>
+                        <li><a href="#">Problem 4: Transpose of a matrix</a></li>
+                        <li><a href="#">Problem 5: Matrix multiplication</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="start-button" onclick="toggleContent(this)">Start Coding Journey</a>
+            </div>
+            <div class="card linked-list">
+                <h2>Linked List</h2>
+                <div class="content">
+                    <ul>
+                        <li><a href="#">Problem 1: Reverse a linked list</a></li>
+                        <li><a href="#">Problem 2: Detect cycle in a linked list</a></li>
+                        <li><a href="#">Problem 3: Merge two sorted linked lists</a></li>
+                        <li><a href="#">Problem 4: Remove nth node from end</a></li>
+                        <li><a href="#">Problem 5: Find the middle of a linked list</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="start-button" onclick="toggleContent(this)">Start Coding Journey</a>
+            </div>
+            <div class="card heap">
+                <h2>Heap</h2>
+                <div class="content">
+                    <ul>
+                        <li><a href="#">Problem 1: Find the kth largest element</a></li>
+                        <li><a href="#">Problem 2: Merge k sorted arrays</a></li>
+                        <li><a href="#">Problem 3: Sort an almost sorted array</a></li>
+                        <li><a href="#">Problem 4: Median in a stream of integers</a></li>
+                        <li><a href="#">Problem 5: K closest points to origin</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="start-button" onclick="toggleContent(this)">Start Coding Journey</a>
+            </div>
+            <div class="card graphs">
+                <h2>Graphs</h2>
+                <div class="content">
+                    <ul>
+                        <li><a href="#">Problem 1: Depth First Search</a></li>
+                        <li><a href="#">Problem 2: Breadth First Search</a></li>
+                        <li><a href="#">Problem 3: Detect cycle in a graph</a></li>
+                        <li><a href="#">Problem 4: Shortest path in a graph</a></li>
+                        <li><a href="#">Problem 5: Topological sort</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="start-button" onclick="toggleContent(this)">Start Coding Journey</a>
+            </div>
+            <div class="card queue">
+                <h2>Queue</h2>
+                <div class="content">
+                    <ul>
+                        <li><a href="#">Problem 1: Implement a queue using stacks</a></li>
+                        <li><a href="#">Problem 2: Circular queue implementation</a></li>
+                        <li><a href="#">Problem 3: LRU Cache implementation</a></li>
+                        <li><a href="#">Problem 4: Sliding window maximum</a></li>
+                        <li><a href="#">Problem 5: Rotten oranges problem</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="start-button" onclick="toggleContent(this)">Start Coding Journey</a>
+            </div>
+            <div class="card tree">
+                <h2>Tree</h2>
+                <div class="content">
+                    <ul>
+                        <li><a href="#">Problem 1: Inorder traversal</a></li>
+                        <li><a href="#">Problem 2: Preorder traversal</a></li>
+                        <li><a href="#">Problem 3: Postorder traversal</a></li>
+                        <li><a href="#">Problem 4: Level order traversal</a></li>
+                        <li><a href="#">Problem 5: Height of a binary tree</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="start-button" onclick="toggleContent(this)">Start Coding Journey</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleContent(button) {
+            const content = button.previousElementSibling;
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+                button.textContent = "Hide Problems";
+            } else {
+                content.style.display = "none";
+                button.textContent = "Start Coding Journey";
+            }
+        }
+    </script>
+</body>
+</html>
